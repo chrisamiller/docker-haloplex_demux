@@ -6,6 +6,7 @@ LABEL \
 
 RUN apt-get update -y && apt-get install -y \
     python \
-    python-dev
+    python-dev \
+    python-biopython
 
 COPY demultiplexer_hja_bd.py /usr/bin/demultiplexer_hja_bd.py
